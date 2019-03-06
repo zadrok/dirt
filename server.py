@@ -17,7 +17,7 @@ class Server(object):
     self.compressionQuility = 60
     self.port = 8080
     self.host = 'localhost'
-    self.fps = 5
+    self.fps = 10
     self.framePeriod = 1.0/self.fps
 
 
