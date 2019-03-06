@@ -11,14 +11,17 @@ import time
 
 class Client(object):
 
-  def __init__(self):
+  def __init__(self, ip=None):
     super(Client, self).__init__()
     self.buffsize = 1024
     self.compressionQuility = 60
     self.port = 8080
-    self.host = '192.168.0.215'
+    self.host = '192.168.0.142'
     self.fps = 5
     self.framePeriod = 1.0/self.fps
+
+    if ip != None:
+      self.host = ip
 
 
   def imgEncode(self,img,quality):
