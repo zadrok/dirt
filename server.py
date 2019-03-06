@@ -16,7 +16,7 @@ class Server(object):
     self.buffsize = 1024
     self.compressionQuility = 60
     self.port = 8080
-    self.host = '192.168.0.215'
+    self.host = 'localhost'
     self.fps = 5
     self.framePeriod = 1.0/self.fps
 
